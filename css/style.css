@@ -1,0 +1,46 @@
+<style>
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background & Font */
+body {
+    background: linear-gradient(to right, #fefefe, #f5f5dc); /* Gunakan satu background */
+    font-family: 'Times New Roman', Arial, sans-serif; /* Kombinasi font */
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+/* Text Styling */
+.text-content {
+    max-width: 50%;
+}
+
+h1 {
+    font-size: 48px;
+    color: #000;
+}
+
+/* Search Bar */
+.search-bar {
+    margin-top: 20px;
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+}
+
+.search-bar::placeholder {
+    color: gray;
+}
+</style>
