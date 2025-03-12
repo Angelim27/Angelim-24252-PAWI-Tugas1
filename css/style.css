@@ -10,7 +10,7 @@ body {
     background: #f8f9fa; 
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 0px;
 }
 
 /* Container */
@@ -114,7 +114,7 @@ h1 {
     text-align: left; /* Teks sejajar ke kiri */
 }
 .history-card h5 {
-    color: #002366; /* Warna navy */
+    color: #002366; 
     font-weight: bold;
     margin-bottom: 5px;
 }
@@ -146,12 +146,7 @@ h1 {
 }
 .navbar {
     background-color: #ffffff !important;
-    border-bottom: 2px solid #d4af37; /* Fungsi: Ada aris bawah tipis sebagai pemisah */ 
-}
-
-/* Fungsi : Mengubah warna latar belakang halaman */ 
-body {
-    background-color: #f8f9fa; 
+    border-bottom: 2px solid #d4af37; /* Fungsi: Ada garis bawah tipis sebagai pemisah */ 
 }
 .card-img-top {
     width: 100%;
