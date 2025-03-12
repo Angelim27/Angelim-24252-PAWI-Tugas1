@@ -7,19 +7,19 @@
 
 /* Background & Font */
 body {
-    background: linear-gradient(to right, #fefefe, #f5f5dc); /*warna bg sesuaikan lagi*/
-    font-family: 'Times New Roman', Arial, sans-serif; /*font cocokin lagi*/
+    background: linear-gradient(to right, #fefefe, #f5f5dc);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
 }
 
+
 /* Container */
-.container {
+.container-flex {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px;
-    padding: 50px;
 }
-
 /* Text Styling */
 .text-content {
     max-width: 50%;
@@ -36,11 +36,13 @@ h1 {
     padding: 10px;
     width: 80%;
     max-width: 400px;
-    border: 1px solid #ccc;
     border-radius: 20px;
-    outline: none;
+    border: 1px solid #ccc;
 }
-
+.search-bar:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+}
 .search-bar::placeholder {
     color: gray;
 }
@@ -53,3 +55,100 @@ h1 {
         max-width: 100%;
     }
 }
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.col-lg-3, .col-md-6, .col-sm-12 {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: left;
+}
+.col-lg-3 img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.col-lg-3 p {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+}
+.section-title {
+    background: linear-gradient(to right, #002366, #0047AB); /* Warna navy */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.history-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #FFD700; /* Warna kuning */
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center; /* Agar gambar dan teks sejajar */
+}
+.history-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-right: 15px; /* Memberi jarak antara gambar dan teks */
+    background: #FFD700; /* Warna kuning */
+    padding: 10px;
+    object-fit: cover;
+}
+.history-card .text-content {
+    flex: 1; /* Agar teks memenuhi sisa ruang */
+    text-align: left; /* Teks sejajar ke kiri */
+}
+.history-card h5 {
+    color: #002366; /* Warna navy */
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.history-card p {
+    margin-bottom: 0;
+}
+.table th {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    border: 3px solid #000 !important;
+}
+.table tbody tr:nth-child(odd) {
+    background-color: #cce5ff;
+}
+.table tbody tr:nth-child(even) {
+    background-color: #fff3cd;
+}
+.table td {
+    padding: 10px;
+    font-size: 16px;
+    border: 3px solid #000;
+}
+.navbar {
+    background-color: #002366; /* Warna biru untuk bagian atas */
+    padding: 10px 20px;
+}
+
+.navbar .menu-container {
+    background-color: white; /* Bagian menu tetap putih */
+    padding: 5px 20px;
+}
+
+
