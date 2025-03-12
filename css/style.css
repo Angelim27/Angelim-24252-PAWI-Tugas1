@@ -141,11 +141,6 @@ h1 {
     font-size: 16px;
     border: 3px solid #000;
 }
-.navbar {
-    background-color: #002366; /* Warna biru untuk bagian atas */
-    padding: 10px 20px;
-}
-
 .navbar .menu-container {
     background-color: white; /* Bagian menu tetap putih */
     padding: 5px 20px;
